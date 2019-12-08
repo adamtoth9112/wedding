@@ -1,3 +1,6 @@
-h1 {
-    text-transform: uppercase;
-}
+@import "base";
+@import "typography";
+@import "utilities";
+
+@import "components/menu";
+@import "components/row";

@@ -1,0 +1,21 @@
+.heading-1 {
+    font-size: 10rem;
+    font-weight: 100;
+    font-family: $font-title;
+    color: $color-secondary;
+    line-height: 1;
+}
+
+.heading-2 {
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: $font-primary;
+    text-transform: uppercase;
+}
+
+.heading-3 {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: $font-primary;
+    text-transform: uppercase;
+}

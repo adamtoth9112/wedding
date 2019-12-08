@@ -1,0 +1,27 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__value--info {
+        background-image: linear-gradient(to right, rgba(211, 175, 142, .8), rgba(151, 124, 99, .8)), url("../../img/bg6.jpg");
+        background-size: cover;
+
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    &__value--content {
+        display: flex;
+    }
+
+    &__value--img {
+        display: block;
+        width: 100%;   
+    }
+    
+    &--reversed .row__value--content {
+        order: -1;
+    }
+}

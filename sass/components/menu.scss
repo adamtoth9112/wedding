@@ -1,0 +1,30 @@
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(max-content, 1fr));
+    align-content: center;
+
+    &__item {
+        list-style: none;
+        font-size: 3rem;
+        padding: 2.5rem;
+        line-height: 1;
+        text-transform: uppercase;
+        transition: all .2s;
+
+        a {
+            position: relative;
+            display: grid;
+            justify-items: center;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: $color-secondary;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+}
