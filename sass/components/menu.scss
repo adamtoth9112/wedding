@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(max-content, 1fr));
     align-content: center;
+    background-color: $color-secondary-dark;
 
     &__item {
         list-style: none;
@@ -20,11 +21,11 @@
         a:link,
         a:visited {
             text-decoration: none;
-            color: $color-secondary;
+            color: white;
         }
 
         &:hover {
-            background-color: $color-primary;
+            background-color: $color-secondary;
         }
     }
 
