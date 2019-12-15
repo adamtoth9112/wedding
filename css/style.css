@@ -165,7 +165,7 @@ body {
   .row--2 {
     display: grid;
     grid-template-rows: 1fr 15vh;
-    background-image: url(../../img/divider.png);
+    background-image: url(../img/divider.png);
     background-repeat: no-repeat; }
     .row--2__container {
       display: grid;
@@ -191,7 +191,7 @@ body {
     grid-template-columns: repeat(2, 35vw);
     justify-content: center;
     padding: 10rem 0;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../img/3mikorhol.jpg);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/3mikorhol.jpg);
     background-size: cover; }
     .row--3__card {
       background-color: rgba(255, 255, 255, 0.8);
@@ -206,7 +206,7 @@ body {
         transform: scale(1.1);
         box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3); }
     .row--3--b {
-      background-image: url(../../img/5szallas.jpg); }
+      background-image: url(../img/5szallas.jpg); }
       .row--3--b .row--3__card {
         background-color: rgba(255, 255, 255, 0.9);
         grid-column: 2; }

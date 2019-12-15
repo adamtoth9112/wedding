@@ -16,7 +16,7 @@
         display: grid;
         grid-template-rows: 1fr 15vh;
 
-        background-image: url(../../img/divider.png);
+        background-image: url(../img/divider.png);
         background-repeat: no-repeat;
 
         &__container {
@@ -56,7 +56,7 @@
         justify-content: center;
         padding: 10rem 0;
 
-        background-image: linear-gradient(to right, rgba(white, 0.5), rgba(white, 0.5)), url(../../img/3mikorhol.jpg);
+        background-image: linear-gradient(to right, rgba(white, 0.5), rgba(white, 0.5)), url(../img/3mikorhol.jpg);
         background-size: cover;
 
         &__card {
@@ -76,7 +76,7 @@
         }
 
         &--b {
-            background-image: url(../../img/5szallas.jpg);
+            background-image: url(../img/5szallas.jpg);
 
             & .row--3__card {
                 background-color: rgba(white, .9);
