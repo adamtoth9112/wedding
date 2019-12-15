@@ -70,32 +70,53 @@ body {
   font-size: 10rem;
   font-weight: 100;
   font-family: "Great Vibes", sans-serif;
-  color: #3A736B;
-  line-height: 1; }
+  color: #008F8A;
+  line-height: 1;
+  text-shadow: 3px 2px 4px rgba(120, 120, 120, 0.5); }
   @media only screen and (max-width: 62.5em) {
     .heading-1 {
       font-size: 9rem; } }
 
 .heading-2 {
   font-size: 4rem;
-  font-weight: 300;
-  font-family: "Nunito", sans-serif;
-  text-transform: uppercase; }
+  font-weight: 400;
+  color: #008F8A;
+  text-shadow: 3px 2px 4px rgba(120, 120, 120, 0.5); }
   @media only screen and (max-width: 62.5em) {
     .heading-2 {
       font-size: 3rem;
       font-weight: 600; } }
 
 .heading-3 {
-  font-size: 2rem;
-  font-weight: 300;
-  font-family: "Nunito", sans-serif;
-  text-transform: uppercase; }
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #008F8A;
+  text-shadow: 3px 2px 4px rgba(120, 120, 120, 0.5); }
   @media only screen and (max-width: 62.5em) {
     .heading-3 {
       font-weight: 500; } }
   @media only screen and (max-width: 56.25em) {
     .heading-3 {
+      font-size: 3rem; } }
+
+.content-title {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #008F8A; }
+  @media only screen and (max-width: 62.5em) {
+    .content-title {
+      font-size: 3rem;
+      font-weight: 600; } }
+
+.content-text {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #008F8A; }
+  @media only screen and (max-width: 62.5em) {
+    .content-text {
+      font-weight: 500; } }
+  @media only screen and (max-width: 56.25em) {
+    .content-text {
       font-size: 3rem; } }
 
 .margin-top-sm {
@@ -134,7 +155,7 @@ body {
 .row {
   display: grid; }
   .row--1 {
-    background-image: url("../img/bg6.jpg");
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3)), url("../img/bg6.jpg");
     background-size: cover;
     display: grid;
     grid-template-rows: repeat(3, max-content);
@@ -143,13 +164,18 @@ body {
     align-content: center; }
   .row--2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
-    align-items: center;
-    padding: 12rem 5rem 2rem 5rem;
+    grid-template-rows: 1fr 15vh;
     background-image: url(../../img/divider.png);
     background-repeat: no-repeat; }
-    .row--2__content {
+    .row--2__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-around;
+      justify-items: center;
+      align-items: center;
+      grid-gap: 5rem;
+      padding: 15rem 11rem 2rem 11rem; }
+    .row--2__text {
       display: grid; }
     .row--2__img-holder {
       display: flex; }
@@ -157,18 +183,19 @@ body {
         display: block;
         width: 100%;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-        border-radius: 2px; }
+        border-radius: 3px; }
+    .row--2__divider {
+      grid-column: 1 / -1; }
   .row--3 {
-    display: flex;
-    grid-template-columns: repeat(3, min-content);
-    align-items: center;
-    padding: 0 5rem;
-    margin-top: -3rem;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../img/4rsvp.jpg);
+    display: grid;
+    grid-template-columns: repeat(2, 35vw);
+    justify-content: center;
+    padding: 10rem 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../img/3mikorhol.jpg);
     background-size: cover; }
     .row--3__card {
       background-color: rgba(255, 255, 255, 0.8);
-      color: #3A736B;
+      color: #008F8A;
       min-width: 20rem;
       border-radius: 5px;
       padding: 2rem;
@@ -178,3 +205,8 @@ body {
       .row--3__card:hover {
         transform: scale(1.1);
         box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3); }
+    .row--3--b {
+      background-image: url(../../img/5szallas.jpg); }
+      .row--3--b .row--3__card {
+        background-color: rgba(255, 255, 255, 0.9);
+        grid-column: 2; }

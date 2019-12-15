@@ -4,6 +4,7 @@
     font-family: $font-title;
     color: $color-font-primary;
     line-height: 1;
+    text-shadow: $text-shadow-grey;
 
     @media only screen and (max-width: $bp-large) {
         font-size: 9rem;
@@ -12,9 +13,9 @@
 
 .heading-2 {
     font-size: 4rem;
-    font-weight: 300;
-    font-family: $font-primary;
-    text-transform: uppercase;
+    font-weight: 400;
+    color: $color-font-primary;
+    text-shadow: $text-shadow-grey;
 
     @media only screen and (max-width: $bp-large) {
         font-size: 3rem;
@@ -23,10 +24,35 @@
 }
 
 .heading-3 {
-    font-size: 2rem;
-    font-weight: 300;
-    font-family: $font-primary;
-    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: $color-font-primary;
+    text-shadow: $text-shadow-grey;
+
+    @media only screen and (max-width: $bp-large) {
+        font-weight: 500;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 3rem;        
+    }
+}
+
+.content-title {
+    font-size: 4rem;
+    font-weight: 400;
+    color: $color-font-primary;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+}
+
+.content-text {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: $color-font-primary;
 
     @media only screen and (max-width: $bp-large) {
         font-weight: 500;
