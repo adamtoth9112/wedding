@@ -32,6 +32,12 @@
 
         &__text {
             display: grid;
+            justify-items: center;
+            grid-template-rows: 1.2fr repeat(2, 1fr);
+
+            &--icon {
+                width: 15%;
+            }
         }
 
         &__img-holder {
@@ -69,6 +75,13 @@
             transition: all .2s;
             box-shadow: 0 1rem 2rem rgba(black, 0.2);
             
+            &--content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 63%;
+            }
+            
             &:hover {
                 transform: scale(1.1);
                 box-shadow: 0 2rem 3rem rgba(black, 0.3);
@@ -83,5 +96,12 @@
                 grid-column: 2;
             }
         }   
+    }
+
+    &--4__text {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: repeat(3, 1fr);
     }
 }
