@@ -26,8 +26,16 @@
             justify-items: center;
             align-items: center;
             grid-gap: 5rem;        
-
             padding: 15rem 11rem 2rem 11rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                padding: 15rem 5rem 2rem 5rem;
+            }
+
+            @media only screen and (max-width: $bp-smallest) {
+                grid-template-columns: auto;
+                padding: 15rem 0 0 0;
+            }
         }
 
         &__text {
@@ -44,6 +52,10 @@
             &--icon {
                 width: 10%;
             }
+
+            @media only screen and (max-width: $bp-large) {
+                grid-template-rows: auto;
+            }
         }
 
         &__img-holder {
@@ -54,6 +66,11 @@
                 width: 100%;
                 box-shadow: 0 1rem 2rem rgba(black, 0.3);
                 border-radius: 3px;
+
+                @media only screen and (max-width: $bp-smallest) {
+                    box-shadow: none;
+                    border-radius: 0;
+                }
             }
         }
 
@@ -65,19 +82,23 @@
     &--3 {
         display: grid;
         grid-template-columns: repeat(2, 35vw);
-        justify-content: center;
+        grid-gap: 3rem;
+        justify-content: space-evenly;
+        justify-items: center;
         padding: 10rem 0;
 
         background-image: linear-gradient(to right, rgba(white, 0.5), rgba(white, 0.5)), url(../img/compressed/3mikorhol.jpg);
         background-size: cover;
+        background-position: center;
 
         &__card {
             background-color: rgba(white, 0.8);
             color: $color-font-primary;
             min-width: 20rem;
+            max-width: 40rem;
             border-radius: 5px;
             padding: 2rem;
-            margin: 6rem;
+            margin: 6rem auto;
             transition: all .2s;
             box-shadow: 0 1rem 2rem rgba(black, 0.2);
             display: grid;
@@ -101,6 +122,11 @@
             &--b {
                 grid-template-rows: 1fr 1fr 1fr max-content 1fr 1fr;
             }
+
+            @media only screen and (max-width: $bp-smallest) {
+                margin: 4rem auto;
+                max-width: 50rem;
+            }
         }
 
         &--b {
@@ -109,12 +135,28 @@
             & .row--3__card {
                 background-color: rgba(white, .9);
                 grid-column: 2;
+
+                @media only screen and (max-width: $bp-smallest) {
+                    grid-column: auto;
+                }
             }
 
             @media only screen and (max-width: $bp-medium) {
                 background-image: url(../img/compressed/5szallas.jpg);
             }
         }   
+        
+        @media only screen and (max-width: $bp-medium) {
+            padding: 5rem 0;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            grid-template-columns: auto;
+            grid-gap: 0;
+            justify-content: space-evenly;
+            justify-items: center;
+            padding: 0;
+        }
     }
 
     &--4__text {

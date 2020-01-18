@@ -18,9 +18,9 @@ $font-title: 'Great Vibes', sans-serif;
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em;   // 1200px
 $bp-large: 62.5em;   // 1000px
-$bp-medium: 56.25em;    // 900px;
+$bp-medium: 56.5em;    // 900px;
 $bp-small: 43.75em;    // 600px;
-$bp-smallest: 25em;    // 400px;
+$bp-smallest: 26.25em;    // 400px;
 
 $menu-height: 6rem;
 
@@ -66,6 +66,11 @@ body {
     &__header {
         height: 1rem;
         background-color: $color-secondary-dark;
+
+        @media only screen and (max-width: $bp-small) {
+            visibility: hidden;
+            display: none;
+        }
     }
     
     @media only screen and (max-width: $bp-large) {
@@ -73,8 +78,12 @@ body {
         max-width: 100%;
     }
 
-    @media only screen and (max-width: $bp-small) {
-        grid-template-rows: repeat(6, 1fr);
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: 1rem calc(60vh - 11rem);
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        grid-template-rows: calc(60vh - 11rem);
     }
 }
 
@@ -111,6 +120,11 @@ body {
 
     @media only screen and (max-width: $bp-large) {
         font-size: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 6rem;
+        margin: 4rem;
     }
 }
 

@@ -5,10 +5,6 @@
     color: $color-font-primary;
     line-height: 1;
     text-shadow: $text-shadow-grey;
-
-    @media only screen and (max-width: $bp-large) {
-        font-size: 9rem;
-    }
 }
 
 .heading-2 {
@@ -17,9 +13,8 @@
     color: $color-font-primary;
     text-shadow: $text-shadow-grey;
 
-    @media only screen and (max-width: $bp-large) {
-        font-size: 3rem;
-        font-weight: 600;
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 5rem;
     }
 }
 
@@ -29,12 +24,8 @@
     color: $color-font-primary;
     text-shadow: $text-shadow-grey;
 
-    @media only screen and (max-width: $bp-large) {
-        font-weight: 500;
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-        font-size: 3rem;        
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 4rem;
     }
 }
 
@@ -44,9 +35,8 @@
     color: $color-font-primary;
     text-align: center;
 
-    @media only screen and (max-width: $bp-large) {
-        font-size: 3rem;
-        font-weight: 600;
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 6rem;
     }
 }
 
@@ -56,22 +46,22 @@
     color: $color-font-primary;
     text-align: center;
 
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 3rem;
+    }
+
     &--small {
         font-size: 2rem;
         text-align: center;
         font-weight: 400;
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 3rem;
+        }
     }
 
     &__i {
         justify-self: stretch;
-    }
-
-    @media only screen and (max-width: $bp-large) {
-        font-weight: 500;
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-        font-size: 3rem;        
     }
 }
 

@@ -11,7 +11,7 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     html {
       font-size: 40%; } }
 
@@ -33,13 +33,20 @@ body {
   .container__header {
     height: 1rem;
     background-color: #FEC7C4; }
+    @media only screen and (max-width: 43.75em) {
+      .container__header {
+        visibility: hidden;
+        display: none; } }
   @media only screen and (max-width: 62.5em) {
     .container {
       margin: 0;
       max-width: 100%; } }
-  @media only screen and (max-width: 43.75em) {
+  @media only screen and (max-width: 56.5em) {
     .container {
-      grid-template-rows: repeat(6, 1fr); } }
+      grid-template-rows: 1rem calc(60vh - 11rem); } }
+  @media only screen and (max-width: 26.25em) {
+    .container {
+      grid-template-rows: calc(60vh - 11rem); } }
 
 .btn {
   line-height: 1;
@@ -69,6 +76,10 @@ body {
   @media only screen and (max-width: 62.5em) {
     .btn {
       font-size: 4rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .btn {
+      font-size: 6rem;
+      margin: 4rem; } }
 
 .google-maps {
   padding: 0 2rem;
@@ -84,59 +95,51 @@ body {
   color: #008F8A;
   line-height: 1;
   text-shadow: 3px 2px 4px rgba(120, 120, 120, 0.5); }
-  @media only screen and (max-width: 62.5em) {
-    .heading-1 {
-      font-size: 9rem; } }
 
 .heading-2 {
   font-size: 4rem;
   font-weight: 400;
   color: #008F8A;
   text-shadow: 3px 2px 4px rgba(120, 120, 120, 0.5); }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 26.25em) {
     .heading-2 {
-      font-size: 3rem;
-      font-weight: 600; } }
+      font-size: 5rem; } }
 
 .heading-3 {
   font-size: 2.5rem;
   font-weight: 500;
   color: #008F8A;
   text-shadow: 3px 2px 4px rgba(120, 120, 120, 0.5); }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 26.25em) {
     .heading-3 {
-      font-weight: 500; } }
-  @media only screen and (max-width: 56.25em) {
-    .heading-3 {
-      font-size: 3rem; } }
+      font-size: 4rem; } }
 
 .content-title {
   font-size: 4rem;
   font-weight: 400;
   color: #008F8A;
   text-align: center; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 26.25em) {
     .content-title {
-      font-size: 3rem;
-      font-weight: 600; } }
+      font-size: 6rem; } }
 
 .content-text {
   font-size: 2.5rem;
   font-weight: 500;
   color: #008F8A;
   text-align: center; }
+  @media only screen and (max-width: 26.25em) {
+    .content-text {
+      font-size: 3rem; } }
   .content-text--small {
     font-size: 2rem;
     text-align: center;
     font-weight: 400; }
+    @media only screen and (max-width: 26.25em) {
+      .content-text--small {
+        font-size: 3rem; } }
   .content-text__i {
     justify-self: stretch; }
-  @media only screen and (max-width: 62.5em) {
-    .content-text {
-      font-weight: 500; } }
-  @media only screen and (max-width: 56.25em) {
-    .content-text {
-      font-size: 3rem; } }
 
 a {
   transition: all .2s; }
@@ -218,6 +221,13 @@ p a:hover, p a:active {
       align-items: center;
       grid-gap: 5rem;
       padding: 15rem 11rem 2rem 11rem; }
+      @media only screen and (max-width: 56.5em) {
+        .row--2__container {
+          padding: 15rem 5rem 2rem 5rem; } }
+      @media only screen and (max-width: 26.25em) {
+        .row--2__container {
+          grid-template-columns: auto;
+          padding: 15rem 0 0 0; } }
     .row--2__text {
       display: grid;
       justify-items: center;
@@ -228,6 +238,9 @@ p a:hover, p a:active {
       grid-template-rows: 1.2fr repeat(2, 1fr); }
       .row--2--b__text--icon {
         width: 10%; }
+      @media only screen and (max-width: 62.5em) {
+        .row--2--b__text {
+          grid-template-rows: auto; } }
     .row--2__img-holder {
       display: flex; }
       .row--2__img-holder--img {
@@ -235,22 +248,30 @@ p a:hover, p a:active {
         width: 100%;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
         border-radius: 3px; }
+        @media only screen and (max-width: 26.25em) {
+          .row--2__img-holder--img {
+            box-shadow: none;
+            border-radius: 0; } }
     .row--2__divider {
       grid-column: 1 / -1; }
   .row--3 {
     display: grid;
     grid-template-columns: repeat(2, 35vw);
-    justify-content: center;
+    grid-gap: 3rem;
+    justify-content: space-evenly;
+    justify-items: center;
     padding: 10rem 0;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/compressed/3mikorhol.jpg);
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     .row--3__card {
       background-color: rgba(255, 255, 255, 0.8);
       color: #008F8A;
       min-width: 20rem;
+      max-width: 40rem;
       border-radius: 5px;
       padding: 2rem;
-      margin: 6rem;
+      margin: 6rem auto;
       transition: all .2s;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
       display: grid;
@@ -268,14 +289,31 @@ p a:hover, p a:active {
         box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3); }
       .row--3__card--b {
         grid-template-rows: 1fr 1fr 1fr max-content 1fr 1fr; }
+      @media only screen and (max-width: 26.25em) {
+        .row--3__card {
+          margin: 4rem auto;
+          max-width: 50rem; } }
     .row--3--b {
       background-image: url(../img/5szallas.jpg); }
       .row--3--b .row--3__card {
         background-color: rgba(255, 255, 255, 0.9);
         grid-column: 2; }
-      @media only screen and (max-width: 56.25em) {
+        @media only screen and (max-width: 26.25em) {
+          .row--3--b .row--3__card {
+            grid-column: auto; } }
+      @media only screen and (max-width: 56.5em) {
         .row--3--b {
           background-image: url(../img/compressed/5szallas.jpg); } }
+    @media only screen and (max-width: 56.5em) {
+      .row--3 {
+        padding: 5rem 0; } }
+    @media only screen and (max-width: 26.25em) {
+      .row--3 {
+        grid-template-columns: auto;
+        grid-gap: 0;
+        justify-content: space-evenly;
+        justify-items: center;
+        padding: 0; } }
   .row--4__text {
     display: grid;
     justify-items: center;
