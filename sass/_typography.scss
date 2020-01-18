@@ -62,6 +62,10 @@
         font-weight: 400;
     }
 
+    &__i {
+        justify-self: stretch;
+    }
+
     @media only screen and (max-width: $bp-large) {
         font-weight: 500;
     }

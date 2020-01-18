@@ -130,6 +130,8 @@ body {
     font-size: 2rem;
     text-align: center;
     font-weight: 400; }
+  .content-text__i {
+    justify-self: stretch; }
   @media only screen and (max-width: 62.5em) {
     .content-text {
       font-weight: 500; } }
@@ -220,9 +222,13 @@ a:hover, a:active {
     .row--2__text {
       display: grid;
       justify-items: center;
+      grid-template-rows: 1.2fr 1.2fr repeat(4, 0.7fr); }
+    .row--2--b__text {
+      display: grid;
+      justify-items: center;
       grid-template-rows: 1.2fr repeat(2, 1fr); }
-      .row--2__text--icon {
-        width: 15%; }
+      .row--2--b__text--icon {
+        width: 10%; }
     .row--2__img-holder {
       display: flex; }
       .row--2__img-holder--img {
@@ -247,7 +253,12 @@ a:hover, a:active {
       padding: 2rem;
       margin: 6rem;
       transition: all .2s;
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      display: grid;
+      align-items: center;
+      align-content: space-between;
+      justify-items: center;
+      grid-gap: 1rem; }
       .row--3__card--content {
         display: flex;
         flex-direction: column;
@@ -256,6 +267,8 @@ a:hover, a:active {
       .row--3__card:hover {
         transform: scale(1.1);
         box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3); }
+      .row--3__card--b {
+        grid-template-rows: 1fr 1fr 1fr max-content 1fr 1fr; }
     .row--3--b {
       background-image: url(../img/compressed/5szallas.jpg); }
       .row--3--b .row--3__card {
@@ -265,4 +278,6 @@ a:hover, a:active {
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-rows: repeat(3, 1fr); }
+    grid-template-rows: repeat(3, 0.5fr); }
+  .row--icon {
+    width: 15%; }
