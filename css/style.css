@@ -242,16 +242,28 @@ p a:hover, p a:active {
         .row--2--b__text {
           grid-template-rows: auto; } }
     .row--2__img-holder {
-      display: flex; }
+      display: block;
+      background-image: url(../img/compressed/2rolunk.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+      width: 100%;
+      height: 35vh; }
+      @media only screen and (max-width: 26.25em) {
+        .row--2__img-holder {
+          box-shadow: none; } }
       .row--2__img-holder--img {
         display: block;
-        width: 100%;
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-        border-radius: 3px; }
+        width: 100%; }
         @media only screen and (max-width: 26.25em) {
           .row--2__img-holder--img {
             box-shadow: none;
             border-radius: 0; } }
+    .row--2__img-holder--4 {
+      background-image: url(../img/compressed/4rsvp.jpg); }
+    .row--2__img-holder--6 {
+      background-image: url(../img/compressed/1vikiesadam.jpg); }
     .row--2__divider {
       grid-column: 1 / -1; }
   .row--3 {
