@@ -79,11 +79,11 @@ a {
     transition: all .2s;
 }
 
-a:link, a:visited {
+p a:link, p a:visited {
     text-decoration: none;
     color: $color-font-primary;
 }
 
-a:hover, a:active {
+p a:hover, p a:active {
     color: $color-secondary-dark;
 }

@@ -57,7 +57,6 @@ body {
   cursor: pointer; }
   .btn:hover {
     background-color: #FAE5E0;
-    color: #008F8A;
     transform: translateY(-3px);
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4); }
   .btn:active {
@@ -142,11 +141,11 @@ body {
 a {
   transition: all .2s; }
 
-a:link, a:visited {
+p a:link, p a:visited {
   text-decoration: none;
   color: #008F8A; }
 
-a:hover, a:active {
+p a:hover, p a:active {
   color: #FEC7C4; }
 
 .margin-top-sm {
@@ -270,10 +269,13 @@ a:hover, a:active {
       .row--3__card--b {
         grid-template-rows: 1fr 1fr 1fr max-content 1fr 1fr; }
     .row--3--b {
-      background-image: url(../img/compressed/5szallas.jpg); }
+      background-image: url(../img/5szallas.jpg); }
       .row--3--b .row--3__card {
         background-color: rgba(255, 255, 255, 0.9);
         grid-column: 2; }
+      @media only screen and (max-width: 56.25em) {
+        .row--3--b {
+          background-image: url(../img/compressed/5szallas.jpg); } }
   .row--4__text {
     display: grid;
     justify-items: center;

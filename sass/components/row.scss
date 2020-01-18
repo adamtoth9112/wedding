@@ -104,11 +104,15 @@
         }
 
         &--b {
-            background-image: url(../img/compressed/5szallas.jpg);
+            background-image: url(../img/5szallas.jpg);
 
             & .row--3__card {
                 background-color: rgba(white, .9);
                 grid-column: 2;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                background-image: url(../img/compressed/5szallas.jpg);
             }
         }   
     }
