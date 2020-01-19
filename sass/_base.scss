@@ -106,11 +106,22 @@ body {
         background-color: $color-secondary;
         transform: translateY(-3px);
         box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, .4);
+
+        @media only screen and (max-width: $bp-smallest) {
+            transform: none;
+            background-color: $color-secondary-dark;
+            box-shadow: none;
+        }
     }
 
     &:active {
         transform: translateY(-1px);
         box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, .3);
+
+        @media only screen and (max-width: $bp-smallest) {
+            transform: none;
+            box-shadow: none;
+        }
     }
 
     @media only screen and (max-width: $bp-large) {

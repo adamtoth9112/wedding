@@ -66,9 +66,18 @@ body {
     background-color: #FAE5E0;
     transform: translateY(-3px);
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4); }
+    @media only screen and (max-width: 26.25em) {
+      .btn:hover {
+        transform: none;
+        background-color: #FEC7C4;
+        box-shadow: none; } }
   .btn:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3); }
+    @media only screen and (max-width: 26.25em) {
+      .btn:active {
+        transform: none;
+        box-shadow: none; } }
   @media only screen and (max-width: 62.5em) {
     .btn {
       font-size: 3rem;
@@ -249,17 +258,13 @@ p a:hover, p a:active {
       background-repeat: no-repeat;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
       width: 100%;
-      height: 35vh; }
+      height: 40vh;
+      border-radius: 3px; }
       @media only screen and (max-width: 26.25em) {
         .row--2__img-holder {
-          box-shadow: none; } }
-      .row--2__img-holder--img {
-        display: block;
-        width: 100%; }
-        @media only screen and (max-width: 26.25em) {
-          .row--2__img-holder--img {
-            box-shadow: none;
-            border-radius: 0; } }
+          box-shadow: none;
+          height: 35vh;
+          border-radius: 0; } }
     .row--2__img-holder--4 {
       background-image: url(../img/compressed/4rsvp.jpg); }
     .row--2__img-holder--6 {
@@ -299,12 +304,18 @@ p a:hover, p a:active {
       .row--3__card:hover {
         transform: scale(1.1);
         box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3); }
+        @media only screen and (max-width: 26.25em) {
+          .row--3__card:hover {
+            transform: none;
+            box-shadow: none; } }
       .row--3__card--b {
         grid-template-rows: 1fr 1fr 1fr max-content 1fr 1fr; }
       @media only screen and (max-width: 26.25em) {
         .row--3__card {
           margin: 4rem auto;
-          max-width: 50rem; } }
+          max-width: 50rem;
+          border-radius: 0;
+          grid-gap: 0; } }
     .row--3--b {
       background-image: url(../img/5szallas.jpg); }
       .row--3--b .row--3__card {
