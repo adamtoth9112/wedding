@@ -281,7 +281,13 @@ p a:hover, p a:active {
           height: 43rem;
           border-radius: 0; } }
     .row--2__img-holder--4 {
-      background-image: url(../img/compressed/4rsvp.jpg); }
+      background-image: url(../img/compressed/4rsvp.jpg);
+      height: 34rem; }
+      @media only screen and (max-width: 43.75em) {
+        .row--2__img-holder--4 {
+          box-shadow: none;
+          height: 49rem;
+          border-radius: 0; } }
     .row--2__img-holder--6 {
       background-image: url(../img/compressed/1vikiesadam.jpg); }
     .row--2__divider {

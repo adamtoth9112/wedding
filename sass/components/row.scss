@@ -81,6 +81,13 @@
 
         &__img-holder--4 {
             background-image: url(../img/compressed/4rsvp.jpg);
+            height: 34rem;
+
+            @media only screen and (max-width: $bp-small) {
+                box-shadow: none;
+                height: 49rem;
+                border-radius: 0;
+            }
         }
 
         &__img-holder--6 {
