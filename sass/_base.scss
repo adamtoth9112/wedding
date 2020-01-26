@@ -21,6 +21,7 @@ $bp-large: 62.5em;   // 1000px
 $bp-medium: 56.5em;    // 900px;
 $bp-small: 43.75em;    // 600px;
 $bp-smallest: 27em;    // 400px;
+$bp-xsmall: 22.5em; // 360px;
 
 $menu-height: 6rem;
 
@@ -82,7 +83,7 @@ body {
         grid-template-rows: 1rem calc(60vh - 11rem);
     }
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
         grid-template-rows: calc(60vh - 11rem);
     }
 }
@@ -91,7 +92,7 @@ body {
     line-height: 1;
     margin: 1rem;
     padding: 1rem 3rem;
-    font-size: 4rem;
+    font-size: 2rem;
     text-decoration: none;
     color: white;
     background-color: $color-secondary-dark;
@@ -107,7 +108,7 @@ body {
         transform: translateY(-3px);
         box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, .4);
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-small) {
             transform: none;
             background-color: $color-secondary-dark;
             box-shadow: none;
@@ -118,23 +119,19 @@ body {
         transform: translateY(-1px);
         box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, .3);
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-small) {
             transform: none;
             box-shadow: none;
         }
     }
 
     @media only screen and (max-width: $bp-large) {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 400;
     }
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-small) {
         font-size: 4rem;
-    }
-
-    @media only screen and (max-width: $bp-smallest) {
-        font-size: 6rem;
         margin: 3rem;
     }
 }

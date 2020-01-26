@@ -44,7 +44,7 @@ body {
   @media only screen and (max-width: 56.5em) {
     .container {
       grid-template-rows: 1rem calc(60vh - 11rem); } }
-  @media only screen and (max-width: 27em) {
+  @media only screen and (max-width: 43.75em) {
     .container {
       grid-template-rows: calc(60vh - 11rem); } }
 
@@ -52,7 +52,7 @@ body {
   line-height: 1;
   margin: 1rem;
   padding: 1rem 3rem;
-  font-size: 4rem;
+  font-size: 2rem;
   text-decoration: none;
   color: white;
   background-color: #FEC7C4;
@@ -66,7 +66,7 @@ body {
     background-color: #FAE5E0;
     transform: translateY(-3px);
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4); }
-    @media only screen and (max-width: 27em) {
+    @media only screen and (max-width: 43.75em) {
       .btn:hover {
         transform: none;
         background-color: #FEC7C4;
@@ -74,20 +74,17 @@ body {
   .btn:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3); }
-    @media only screen and (max-width: 27em) {
+    @media only screen and (max-width: 43.75em) {
       .btn:active {
         transform: none;
         box-shadow: none; } }
   @media only screen and (max-width: 62.5em) {
     .btn {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 400; } }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 43.75em) {
     .btn {
-      font-size: 4rem; } }
-  @media only screen and (max-width: 27em) {
-    .btn {
-      font-size: 6rem;
+      font-size: 4rem;
       margin: 3rem; } }
 
 .google-maps {
@@ -110,7 +107,7 @@ body {
   font-weight: 400;
   color: #008F8A;
   text-shadow: 3px 2px 4px rgba(120, 120, 120, 0.5); }
-  @media only screen and (max-width: 27em) {
+  @media only screen and (max-width: 43.75em) {
     .heading-2 {
       font-size: 5rem; } }
 
@@ -119,34 +116,42 @@ body {
   font-weight: 500;
   color: #008F8A;
   text-shadow: 3px 2px 4px rgba(120, 120, 120, 0.5); }
-  @media only screen and (max-width: 27em) {
+  @media only screen and (max-width: 43.75em) {
     .heading-3 {
       font-size: 4rem; } }
 
 .content-title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
   color: #008F8A;
   text-align: center; }
-  @media only screen and (max-width: 27em) {
+  @media only screen and (max-width: 43.75em) {
     .content-title {
-      font-size: 6rem; } }
+      font-size: 5rem; } }
 
 .content-text {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #008F8A;
   text-align: center; }
-  @media only screen and (max-width: 27em) {
+  @media only screen and (max-width: 56.5em) {
+    .content-text {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 43.75em) {
     .content-text {
       font-size: 3rem; } }
   .content-text--small {
     font-size: 2rem;
     text-align: center;
     font-weight: 400; }
-    @media only screen and (max-width: 27em) {
+    @media only screen and (max-width: 43.75em) {
       .content-text--small {
         font-size: 3rem; } }
+    .content-text--small__x {
+      font-size: 1.5rem; }
+      @media only screen and (max-width: 43.75em) {
+        .content-text--small__x {
+          font-size: 2rem; } }
   .content-text__i {
     justify-self: stretch; }
 
@@ -227,23 +232,23 @@ p a:hover, p a:active {
     background-repeat: no-repeat; }
     .row--2__container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1.2fr 1fr;
       justify-content: space-around;
       justify-items: center;
       align-items: center;
-      grid-gap: 5rem;
+      grid-gap: 3rem;
       padding: 15rem 11rem 2rem 11rem; }
       @media only screen and (max-width: 56.5em) {
         .row--2__container {
           padding: 15rem 5rem 2rem 5rem; } }
-      @media only screen and (max-width: 27em) {
+      @media only screen and (max-width: 43.75em) {
         .row--2__container {
           grid-template-columns: auto;
           padding: 15rem 0 0 0; } }
     .row--2__text {
       display: grid;
       justify-items: center;
-      grid-template-rows: 1.2fr 1.2fr repeat(4, 0.7fr); }
+      grid-template-rows: 1.2fr 1.2fr; }
     .row--2--b__text {
       display: grid;
       justify-items: center;
@@ -266,7 +271,7 @@ p a:hover, p a:active {
       @media only screen and (max-width: 56.5em) {
         .row--2__img-holder {
           height: 26rem; } }
-      @media only screen and (max-width: 27em) {
+      @media only screen and (max-width: 43.75em) {
         .row--2__img-holder {
           box-shadow: none;
           height: 43rem;
@@ -277,6 +282,20 @@ p a:hover, p a:active {
       background-image: url(../img/compressed/1vikiesadam.jpg); }
     .row--2__divider {
       grid-column: 1 / -1; }
+    .row--2__timeline-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap; }
+      .row--2__timeline-list__item {
+        flex: 0 0 50%; }
+        .row--2__timeline-list__item > p {
+          text-align: right; }
+          @media only screen and (max-width: 22.5em) {
+            .row--2__timeline-list__item > p {
+              font-size: 2.5rem; } }
+        .row--2__timeline-list__item:nth-child(even) > p {
+          text-align: left;
+          margin-left: 3rem; }
   .row--3 {
     display: grid;
     grid-template-columns: repeat(2, minmax(40rem, max-content));
@@ -310,12 +329,12 @@ p a:hover, p a:active {
       .row--3__card:hover {
         transform: scale(1.1);
         box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3); }
-        @media only screen and (max-width: 27em) {
+        @media only screen and (max-width: 43.75em) {
           .row--3__card:hover {
             transform: none; } }
       .row--3__card--b {
         grid-template-rows: 1fr 1fr 1fr max-content 1fr 1fr; }
-      @media only screen and (max-width: 27em) {
+      @media only screen and (max-width: 43.75em) {
         .row--3__card {
           margin: 4rem auto;
           max-width: 50rem;
@@ -326,7 +345,7 @@ p a:hover, p a:active {
       .row--3--b .row--3__card {
         background-color: rgba(255, 255, 255, 0.9);
         grid-column: 2; }
-        @media only screen and (max-width: 27em) {
+        @media only screen and (max-width: 43.75em) {
           .row--3--b .row--3__card {
             grid-column: auto; } }
       @media only screen and (max-width: 56.5em) {
@@ -335,7 +354,7 @@ p a:hover, p a:active {
     @media only screen and (max-width: 56.5em) {
       .row--3 {
         padding: 5rem 0; } }
-    @media only screen and (max-width: 27em) {
+    @media only screen and (max-width: 43.75em) {
       .row--3 {
         grid-template-columns: auto;
         grid-gap: 0;
@@ -349,3 +368,5 @@ p a:hover, p a:active {
     grid-template-rows: repeat(3, 0.5fr); }
   .row--icon {
     width: 15%; }
+    .row--icon__small {
+      width: 10%; }

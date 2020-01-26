@@ -13,7 +13,7 @@
     color: $color-font-primary;
     text-shadow: $text-shadow-grey;
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
         font-size: 5rem;
     }
 }
@@ -24,29 +24,33 @@
     color: $color-font-primary;
     text-shadow: $text-shadow-grey;
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
         font-size: 4rem;
     }
 }
 
 .content-title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: $color-font-primary;
     text-align: center;
 
-    @media only screen and (max-width: $bp-smallest) {
-        font-size: 6rem;
+    @media only screen and (max-width: $bp-small) {
+        font-size: 5rem;
     }
 }
 
 .content-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: $color-font-primary;
     text-align: center;
+    
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 2rem;
+    }
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
         font-size: 3rem;
     }
 
@@ -55,8 +59,16 @@
         text-align: center;
         font-weight: 400;
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-small) {
             font-size: 3rem;
+        }
+
+        &__x {
+            font-size: 1.5rem;
+        
+            @media only screen and (max-width: $bp-small) {
+                font-size: 2rem;
+            }
         }
     }
 
