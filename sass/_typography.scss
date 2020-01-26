@@ -34,6 +34,7 @@
     font-weight: 400;
     color: $color-font-primary;
     text-align: center;
+    margin-bottom: 3rem;
 
     @media only screen and (max-width: $bp-small) {
         font-size: 5rem;
@@ -45,13 +46,14 @@
     font-weight: 500;
     color: $color-font-primary;
     text-align: center;
+    padding: 0 1rem 0 1rem;
     
     @media only screen and (max-width: $bp-medium) {
         font-size: 2rem;
     }
 
     @media only screen and (max-width: $bp-small) {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     &--small {
@@ -60,7 +62,7 @@
         font-weight: 400;
 
         @media only screen and (max-width: $bp-small) {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         &__x {
@@ -75,6 +77,10 @@
     &__i {
         justify-self: stretch;
     }
+}
+
+.timeline-text {
+    padding: 0;
 }
 
 a {

@@ -124,7 +124,8 @@ body {
   font-size: 3rem;
   font-weight: 400;
   color: #008F8A;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 3rem; }
   @media only screen and (max-width: 43.75em) {
     .content-title {
       font-size: 5rem; } }
@@ -133,20 +134,21 @@ body {
   font-size: 2rem;
   font-weight: 500;
   color: #008F8A;
-  text-align: center; }
+  text-align: center;
+  padding: 0 1rem 0 1rem; }
   @media only screen and (max-width: 56.5em) {
     .content-text {
       font-size: 2rem; } }
   @media only screen and (max-width: 43.75em) {
     .content-text {
-      font-size: 3rem; } }
+      font-size: 2.5rem; } }
   .content-text--small {
     font-size: 2rem;
     text-align: center;
     font-weight: 400; }
     @media only screen and (max-width: 43.75em) {
       .content-text--small {
-        font-size: 3rem; } }
+        font-size: 2.5rem; } }
     .content-text--small__x {
       font-size: 1.5rem; }
       @media only screen and (max-width: 43.75em) {
@@ -154,6 +156,9 @@ body {
           font-size: 2rem; } }
   .content-text__i {
     justify-self: stretch; }
+
+.timeline-text {
+  padding: 0; }
 
 a {
   transition: all .2s; }
@@ -247,8 +252,7 @@ p a:hover, p a:active {
           padding: 15rem 0 0 0; } }
     .row--2__text {
       display: grid;
-      justify-items: center;
-      grid-template-rows: 1.2fr 1.2fr; }
+      justify-items: center; }
     .row--2--b__text {
       display: grid;
       justify-items: center;
@@ -333,7 +337,7 @@ p a:hover, p a:active {
           .row--3__card:hover {
             transform: none; } }
       .row--3__card--b {
-        grid-template-rows: 1fr 1fr 1fr max-content 1fr 1fr; }
+        grid-template-rows: 1fr 1fr .5fr max-content 1fr 1fr; }
       @media only screen and (max-width: 43.75em) {
         .row--3__card {
           margin: 4rem auto;
