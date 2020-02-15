@@ -50,7 +50,7 @@ body {
 
 .btn {
   line-height: 1;
-  margin: 1rem;
+  margin: 2rem;
   padding: 1rem 3rem;
   font-size: 2rem;
   text-decoration: none;
@@ -63,7 +63,6 @@ body {
   position: relative;
   cursor: pointer; }
   .btn:hover {
-    background-color: #FAE5E0;
     transform: translateY(-3px);
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4); }
     @media only screen and (max-width: 43.75em) {
@@ -164,7 +163,7 @@ a {
   transition: all .2s; }
 
 p a:link, p a:visited {
-  text-decoration: none;
+  text-decoration: underline;
   color: #008F8A; }
 
 p a:hover, p a:active {
@@ -322,13 +321,13 @@ p a:hover, p a:active {
       min-width: 20rem;
       max-width: 40rem;
       border-radius: 5px;
-      padding: 2rem;
+      padding: 2.7rem;
       margin: 6rem auto;
       transition: all .2s;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
       display: grid;
       align-items: center;
-      align-content: space-between;
+      align-content: start;
       justify-items: center;
       grid-gap: 1rem; }
       .row--3__card--content {
@@ -342,8 +341,6 @@ p a:hover, p a:active {
         @media only screen and (max-width: 43.75em) {
           .row--3__card:hover {
             transform: none; } }
-      .row--3__card--b {
-        grid-template-rows: 1fr 1fr .5fr max-content 1fr 1fr; }
       @media only screen and (max-width: 43.75em) {
         .row--3__card {
           margin: 4rem auto;

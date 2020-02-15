@@ -140,13 +140,13 @@
             min-width: 20rem;
             max-width: 40rem;
             border-radius: 5px;
-            padding: 2rem;
+            padding: 2.7rem;
             margin: 6rem auto;
             transition: all .2s;
             box-shadow: 0 1rem 2rem rgba(black, 0.2);
             display: grid;
             align-items: center;
-            align-content: space-between;
+            align-content: start;
             justify-items: center;
             grid-gap: 1rem;
             
@@ -164,10 +164,6 @@
                 @media only screen and (max-width: $bp-small) {
                     transform: none;
                 }
-            }
-
-            &--b {
-                grid-template-rows: 1fr 1fr .5fr max-content 1fr 1fr;
             }
 
             @media only screen and (max-width: $bp-small) {
